@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <LanguageVersion>8.0</LanguageVersion>
+	  <nullable>enable</nullable>
   </PropertyGroup>
 
 </Project>

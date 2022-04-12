@@ -9,7 +9,7 @@ namespace CardCatalog.Data
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public BookGenre Genre { get; set; }
-        public List<Book> Books { get; set; }
+        public List<Book> Books { get; set; } = new List<Book>();
 
         public Author(string firstName, string lastName, BookGenre genre)
         {
@@ -34,7 +34,7 @@ namespace CardCatalog.Data
         public Author Author { get; set; }
         public DateTime PublishedAt { get; set; }
         public BookGenre Genre { get; set; }
-        public CheckOut ActiveCheckOut { get; set; }
+        public CheckOut? ActiveCheckOut { get; set; }
 
         public Book(string title, Author author, DateTime publishedAt)
         {
@@ -51,7 +51,7 @@ namespace CardCatalog.Data
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }
-        public List<CheckOut> CheckedOutItems { get; set; }
+        public List<CheckOut> CheckedOutItems { get; set; } = new List<CheckOut>();
 
         public Member(string firstName, string lastName, string address)
         {

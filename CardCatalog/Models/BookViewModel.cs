@@ -19,7 +19,7 @@ namespace CardCatalog.Models
             AuthorName = $"{book.Author.FirstName} {book.Author.LastName}";
             PublishedAt = book.PublishedAt;
             Genre = book.Genre;
-            CheckedOutUntil = book.ActiveCheckOut.DueDate;
+            CheckedOutUntil = book.ActiveCheckOut?.DueDate;
         }
     }
 }
